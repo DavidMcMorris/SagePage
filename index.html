@@ -25,5 +25,26 @@ then “Permalink”. The page will redirect, and you can copy the new
 link into the text field of the exam submission in Scholar.
 <em>(Note: the share option will only appear after the Sage code has been evaluated. Any changes you make after generating the permalink will not be saved at that link, so you will need to return to this page and generate a new link for any additional changes.)</em>
     <div class="compute"><script type="text/x-sage"></script></div>
+<p>
+  <strong>Useful commands:</strong>
+    </p>
+  <ul>
+    <li> C*D, C+D, C-D, C/D, C**D : basic arithmetic operations, if defined. C and D can be scalars, vectors, matrices, etc. The last command, C**D, raises C to the power of D; the others should be self-explanatory.</li>
+    <li> # : comments out anything following in the same line.</li>
+    <li> print(), print(" ") : evaluates and prints whatever is between the parentheses; the quotes tell it not to evaluate but just to print the text.</li>
+    <li> A.numerical_approx(digits=i) : returns an approximation of A with i significant figures in each entry (A can be a scalar, vector, matrix, etc.). Note, this is not the same as rounding each entry to 4 decimal places.</li>
+    <li> matrix.(m,n,[comma-separated list of matrix entries]) : creates an mxn matrix with entries listed left to right and top to bottom (first row, then second row, ..., then last row).</li>
+    <li> vector.([comma-separated list of vector entries]) : creates a vector with the given entries from top to bottom.</li>
+    <li> identity_matrix(n) : returns the nxn identity matrix.</li>
+    <li> A.rref() : returns the reduced row echelon form of a matrix A.</li>
+    <li> A.augment(B) : given a matrix A and a matrix or vector B, returns the augmented matrix [A B], if defined.</li>
+    <li> A.column(i) : returns the ith column of a matrix A, where the leftmost column of A is counted as column 0 (e.g. a matrix with 4 columns would have columns 0,1,2,3).</li>
+    <li> A.det() : returns the determinant of a matrix A, if defined.</li>
+    <li> A.inverse() : returns the inverse of a matrix A, if defined.</li>
+    <li> A.charpoly() : returns the characteristic polynomial of a matrix A, if defined, with variable x.</li>
+    <li> A.fcp() : returns the factored characteristic polynomial of a matrix A, if defined, with variable x.</li>
+    <li> A.eigenvalues() : returns the list of eigenvalues of a matrix A, if defined.</li>
+    <li> A.eigenvectors_right() : returns a list of triples of the form (eigenvalue, [basis for eigenspace], multiplicity of eigenvalue) for a matrix A, if defined.</li>
+  </ul>
   </body>
 </html>
